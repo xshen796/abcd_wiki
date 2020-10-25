@@ -14,7 +14,7 @@
 
   <link rel="stylesheet" href="css/theme.css" />
   <link rel="stylesheet" href="css/theme_extra.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  <link href="css/extra.css" rel="stylesheet" />
   
   <script>
     // Current page data
@@ -24,9 +24,7 @@
   </script>
   
   <script src="js/jquery-2.1.1.min.js" defer></script>
-  <script src="js/modernizr-2.8.3.min.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script> 
+  <script src="js/modernizr-2.8.3.min.js" defer></script> 
   
 </head>
 
@@ -94,17 +92,15 @@
             <div class="section">
               
                 <h1 id="general-info-for-using-abcd-data">General info for using ABCD data</h1>
-<div class="admonition notice">
-<p class="admonition-title">Notice</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
 <p>Only users registered with a named application can use this data.
 Check with Dr Heather Whalley if you have any question.
 Watch this video to know more about <a href="https://www.gotostage.com/channel/138fa524383b4041afc49f8694688dc3/recording/77a3a9ede95846568e2bc56596c97292/watch">data protection</a>.</p>
 </div>
-<ul>
-<li><a href="https://www.sciencedirect.com/journal/developmental-cognitive-neuroscience/vol/32/suppl/C">ABCD protocol papers</a></li>
-<li><a href="https://nda.nih.gov/data_dictionary.html?source=ABCD%2BRelease%2B2.0&amp;submission=ALL">Data dictionary for release 2.0.1</a></li>
-<li><a href="https://nda.nih.gov/abcd">A summary of ABCD study</a></li>
-</ul>
+<p><a href="https://www.sciencedirect.com/journal/developmental-cognitive-neuroscience/vol/32/suppl/C">ABCD protocol papers</a><br />
+<a href="https://nda.nih.gov/data_dictionary.html?source=ABCD%2BRelease%2B2.0&amp;submission=ALL">Data dictionary for release 2.0.1</a><br />
+<a href="https://nda.nih.gov/abcd">A summary of ABCD study</a>  </p>
 <hr />
 <h1 id="data-location">Data location</h1>
 <ul>
@@ -112,44 +108,71 @@ Watch this video to know more about <a href="https://www.gotostage.com/channel/1
 <li>Eddie datastore: /exports/igmm/datastore/GenScotDepression/data/abcd/release2.0.1</li>
 <li>CMVM datastore: </li>
 </ul>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>You should check with Dr. Heather Whalley to see if you have been added to the data usage agreement (i.e. permission to use the data). 
+Once you have permission, contact Dr. Mark Adams for access to the GenScotDepression folder.</p>
+</div>
+<p>Data in these folders are the same. You can load from whichever location you prefer.  </p>
+<p>Within the data folder, you will be able to see:</p>
+<ul>
+<li>i.files_from_web: raw curated data from the NDA database in plain text format (not recommended to use).</li>
+<li>ii.docs: supporting documentations from the NDA database.</li>
+<li>iii.data: curated data sorted by category. Data is stored in rds format (recommended).</li>
+</ul>
 <hr />
 <h1 id="data-download">Data download</h1>
+<p>This section describes procedures for downloading data used by data managers. 
+Those who only wish to use the data can omit this section.</p>
 <h2 id="data">Data</h2>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>It takes a while before the added packages appears in your account. Large data may take up to around 30 mins
-Including bulk data may take up a very large space</p>
-</div>
-<p>The latest curated data packages downloaded are: ABCDstudyNDA</p>
-<div class="admonition download files">
-<p class="admonition-title">Download</p>
+<div class="admonition downloaded files">
+<p class="admonition-title">Downloaded</p>
 <p>In subfolder 'i.files_from_web'</p>
 </div>
+<p>Procedure:<br />
+- Go to: https://nda.nih.gov/abcd
+- Login with NDA credentials and go to 'my dashboard'
+- Click username at the topright of the page to go to your profile
+- Go to 'Data packages' and select the packages to download (add to 'My Data Packages' using tab 'Actions')
+- Click 'Download Manager' 
+- Run the downloaded 'Download Manager'
+- Login with NDA credentials
+- Download data</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>It takes a while before the added packages appears in your account. Large data may take up to around 30 mins.<br />
+Remember that including bulk data may take up a very large space</p>
+</div>
+<p>The latest curated data packages downloaded are: ABCDstudyNDA</p>
 <h2 id="supporting-documentations">Supporting documentations</h2>
-<p><a href="https://nda.nih.gov/study.html?id=634">Summary of the latested release</a>
-Check the hyperlinks 'DEAP-NDA variables mapping' and 'Release Notes' for more information about the current dataset.</p>
 <div class="admonition downloaded documentations">
 <p class="admonition-title">Downloaded</p>
 <p>In subfolder 'ii.docs'</p>
 </div>
+<p><a href="https://nda.nih.gov/study.html?id=634">Summary of the latested release</a><br />
+Check the hyperlinks 'DEAP-NDA variables mapping' and 'Release Notes' for more information about the current dataset.</p>
 <hr />
 <h1 id="segment-data-by-category">Segment data by category</h1>
-<p><a href="https://github.com/xshen796/ABCD_UoEPsych/tree/main/Util/organise_dat">Functions need</a></p>
+<p><a href="https://github.com/xshen796/ABCD_UoEPsych/tree/main/Util/organise_dat">Functions need</a>  </p>
 <ul>
-<li>Summary</li>
+<li>
+<p>Summary</p>
+<ul>
 <li>process_files.R is the default R script for all main steps</li>
 <li>baseline.R and baseline_imputation.R are functions for baseline measures</li>
-<li>
-<p>Other files are used by process_files.R</p>
+<li>Other files are used by process_files.R  </li>
+</ul>
 </li>
 <li>
 <p>Files essential for process_files.R (all need manual check for each data release)</p>
-</li>
-<li>Instruments.ABCD_summary_web_dictionary.csv: This file should be created manually. Copy contents from [URL] (https://nda.nih.gov/data_dictionary.html?source=ABCD%2BRelease%2B2.0&amp;submission=ALL)</li>
+<ul>
+<li>Instruments.ABCD_summary_web_dictionary.csv: This file should be created manually. Copy contents from <a href="https://nda.nih.gov/data_dictionary.html?source=ABCD%2BRelease%2B2.0&amp;submission=ALL">URL</a></li>
 <li>ls.category: a list of object names and categories, a master list of all object names that ABCD ever released</li>
 <li>ls.category.PreiousVersionOnly: like ls.category, but contains the objects only release in a previous version</li>
 <li>ls.category.CurrentVersion: like ls.category, but contains objects released in the lasted version</li>
 <li>ls.faultyobjects: sometimes ABCD have objects that need to be removed (e.g. some imaging files from release 2.0, fixed in release 2.0.1)</li>
+</ul>
+</li>
 </ul>
               
             </div>
@@ -204,5 +227,5 @@ Check the hyperlinks 'DEAP-NDA variables mapping' and 'Release Notes' for more i
 
 <!--
 MkDocs version : 1.1.2
-Build Date UTC : 2020-10-25 14:23:48.137255+00:00
+Build Date UTC : 2020-10-25 18:35:16.193383+00:00
 -->
