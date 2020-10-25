@@ -1,0 +1,24 @@
+site_name: Using data from the adolescent brain cognitive development (ABCD) study
+
+nav:
+    - Home: index.md
+    - Mental health phenotypes: Mental_health_phenotypes.md
+    - Projects: specific_projects.md
+
+theme: 
+    name: readthedocs
+    highlightjs: true
+
+markdown_extensions:
+    - admonition
+    - pymdownx.details
+    - pymdownx.tabbed
+    - pymdownx.superfences
+    - pymdownx.highlight:
+        use_pygments: true
+        noclasses: true
+    - pymdownx.arithmatex:
+        generic: True
+    - pymdownx.betterem:
+        smart_enable: all
+    - pymdownx.caret
